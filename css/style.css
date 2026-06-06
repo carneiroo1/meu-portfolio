@@ -238,6 +238,9 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .card-tech li {
@@ -431,4 +434,91 @@ html {
         width: 32px;
         height: 32px;
     }
+}
+
+/* =============================================
+   TEMA ESCURO
+   ============================================= */
+[data-theme="dark"] {
+    --cor-primaria: #60a5fa;
+    --cor-texto: #e8e8e8;
+    --cor-fundo: #0f1117;
+    --cor-borda: rgba(255, 255, 255, 0.08);
+    --sombra-card: 0px 4px 40px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+[data-theme="dark"] header {
+    background-color: rgba(15, 17, 23, 0.85);
+}
+
+[data-theme="dark"] header a {
+    color: var(--cor-texto);
+}
+
+[data-theme="dark"] .hero-texto-esquerda h2 {
+    color: #aaa;
+}
+
+[data-theme="dark"] .card-tech,
+[data-theme="dark"] .card-projetos {
+    background-color: #1a1d27;
+    box-shadow: var(--sombra-card);
+}
+
+[data-theme="dark"] .card-projetos span {
+    background: #1e2d4a;
+    color: var(--cor-primaria);
+}
+
+[data-theme="dark"] .card-projetos a {
+    background-color: var(--cor-primaria);
+    color: #0f1117;
+}
+
+[data-theme="dark"] .card-projetos a:hover {
+    background-color: #93c5fd;
+}
+
+[data-theme="dark"] .tech-button {
+    border-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+[data-theme="dark"] .tech-button:hover {
+    background: var(--cor-primaria);
+    color: #0f1117;
+}
+
+[data-theme="dark"] footer {
+    color: #888;
+}
+
+/* Transição suave ao trocar tema */
+body, header, .card-tech, .card-projetos, footer {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* =============================================
+   BOTÃO DE TEMA
+   ============================================= */
+.theme-toggle {
+    background: none;
+    border: 2px solid var(--cor-borda);
+    border-radius: 50px;
+    padding: 6px 14px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    border-color: var(--cor-primaria);
+    background: rgba(96, 165, 250, 0.08);
 }

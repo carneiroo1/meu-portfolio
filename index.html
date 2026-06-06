@@ -58,7 +58,15 @@
                     <img src="img/github-icon.png" alt="github-icon" class="icon-header">
                 </a>
             </li>
+            <li>
+                <!-- Botão Tema Escuro -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </li>
         </ul>
+
+
     </header>
 
     <!-- Principal -->
@@ -170,8 +178,9 @@
                         <li><span>Flask</span></li>
                         <li><span>Ollama</span></li>
                     </ul>
-                    
-                    <a href="https://github.com/carneiroo1/Projetos-Python/tree/main/Resumo-de-videos">Código (GitHub)</a>
+
+                    <a href="https://github.com/carneiroo1/Projetos-Python/tree/main/Resumo-de-videos">Código
+                        (GitHub)</a>
                 </div>
             </div>
 
@@ -182,6 +191,40 @@
     <footer id="contato">
         <span>Artur Carneiro Tavares</span>
     </footer>
+
+    <script>
+        const btn = document.getElementById('themeToggle');
+        const icon = btn.querySelector('.theme-icon');
+        const root = document.documentElement;
+
+        // Aplica tema salvo
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            root.setAttribute('data-theme', 'dark');
+            icon.textContent = '☀️';
+        }
+
+        btn.addEventListener('click', () => {
+            const isDark = root.getAttribute('data-theme') === 'dark';
+            if (isDark) {
+                root.removeAttribute('data-theme');
+                icon.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            } else {
+                root.setAttribute('data-theme', 'dark');
+                icon.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Botão Tecnologias
+        const techBtn = document.querySelector('.tech-button');
+        if (techBtn) {
+            techBtn.addEventListener('click', () => {
+                document.getElementById('tecnologias').scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+    </script>
 </body>
 
 </html>
