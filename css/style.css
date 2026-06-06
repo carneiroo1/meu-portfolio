@@ -590,3 +590,29 @@ body, header, .card-tech, .card-projetos, footer {
     border-color: var(--cor-primaria);
     background: rgba(96, 165, 250, 0.08);
 }
+
+/* =============================================
+   ÍCONES SVG — herdam a cor do tema
+   ============================================= */
+img.icon-header[src$=".svg"],
+img.icon-tech[src$=".svg"] {
+    /* força o navegador a renderizar como elemento inline
+       para que filter funcione corretamente */
+    display: inline-block;
+}
+ 
+/* Tema claro: ícones escuros */
+.icon-header[src$=".svg"] {
+    filter: brightness(0);
+}
+ 
+.icon-tech[src$=".svg"] {
+    filter: brightness(0);
+}
+ 
+/* Tema escuro: ícones brancos */
+[data-theme="dark"] .icon-header[src$=".svg"],
+[data-theme="dark"] .icon-tech[src$=".svg"] {
+    filter: brightness(0) invert(1);
+}
+ 
