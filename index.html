@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/portfolio-icon.png" type="image/x-icon">
 
+    <!-- JavaScript -->
+    <script src="/script.js" defer></script>
+
     <!-- FOntes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,6 +74,7 @@
 
     <!-- Principal -->
     <main>
+        <!-- Hero -->
         <section class="hero" id="hero">
             <div class="hero-texto-esquerda">
                 <h1>
@@ -98,6 +102,8 @@
                 <img src="img/no-image.jpg" alt="no image">
             </div>
         </section>
+
+        <!-- Tecnologias -->
         <section class="tecnologias" id="tecnologias">
             <h1 class="mgtp15">Tecnologias</h1>
             <div class="tech-duo">
@@ -142,6 +148,7 @@
             </div>
         </section>
 
+        <!-- Tecnologias -->
         <section class="aboutme" id="aboutme">
             <div class="aboutme-esquerda">
                 <img src="img/no-image.jpg" alt="">
@@ -164,6 +171,7 @@
             </div>
         </section>
 
+        <!-- Projetos -->
         <section class="projetos" id="projetos">
             <h1 class="mgtp15">Projeto em destaque</h1>
             <div class="cards">
@@ -191,40 +199,6 @@
     <footer id="contato">
         <span>Artur Carneiro Tavares</span>
     </footer>
-
-    <script>
-        const btn = document.getElementById('themeToggle');
-        const icon = btn.querySelector('.theme-icon');
-        const root = document.documentElement;
-
-        // Aplica tema salvo
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            root.setAttribute('data-theme', 'dark');
-            icon.textContent = '☀️';
-        }
-
-        btn.addEventListener('click', () => {
-            const isDark = root.getAttribute('data-theme') === 'dark';
-            if (isDark) {
-                root.removeAttribute('data-theme');
-                icon.textContent = '🌙';
-                localStorage.setItem('theme', 'light');
-            } else {
-                root.setAttribute('data-theme', 'dark');
-                icon.textContent = '☀️';
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-
-        // Botão Tecnologias
-        const techBtn = document.querySelector('.tech-button');
-        if (techBtn) {
-            techBtn.addEventListener('click', () => {
-                document.getElementById('tecnologias').scrollIntoView({ behavior: 'smooth' });
-            });
-        }
-    </script>
 </body>
 
 </html>
