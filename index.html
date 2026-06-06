@@ -7,13 +7,23 @@
     <title>Portfólio - Artur Carneiro</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/portfolio-icon.png" type="image/x-icon">
+
+    <!-- FOntes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- SpaceGrotesk -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Cabeçalho -->
     <header>
-        <img src="img/user.png" alt="user" id="icon">
+        <img src="img/user.png" alt="user" id="icon" style="padding-left: 20px;">
         <!-- Barra de Navegação -->
         <nav>
             <ul class="header-list">
@@ -34,18 +44,18 @@
 
         <ul class="header-list">
             <li>
-                <a href="">
+                <a href="#" target="_blank" rel="external">
                     <img src="img/whatsapp-icon.png" alt="" id="icon">
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="img/linkedin-icon.png" alt="" id="icon">
+                <a href="https://www.linkedin.com/in/artur-c-0b27b63b0/" target="_blank" rel="external">
+                    <img src="img/linkedin-icon.png" alt="linkedin-icon" id="icon">
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="img/github-icon.png" alt="" id="icon">
+                <a href="https://github.com/carneiroo1" target="_blank" rel="external">
+                    <img src="img/github-icon.png" alt="github-icon" id="icon">
                 </a>
             </li>
         </ul>
@@ -53,21 +63,67 @@
 
     <!-- Principal -->
     <main>
-        <div class="intro-1">
-            
-            <h1>
-                Artur Carneiro
-            </h1>
-            <p>
-                Um jovem de 16 anos ja buscando espaço no mercado de trabalho, fazendo webiste para start-ups.
-            </p>
-        </div>
-        <aside>
-            <img src="img/no-image.jpg" alt="" id="main-img">
-        </aside>
-        <div class="sobre-mim">
-            
-        </div>
+        <section class="hero">
+            <div class="hero-texto-esquerda">
+                <h1>
+                    Olá, eu sou
+                </h1>
+                <h1 id="h1-nome-destaque">
+                    Artur Carneiro 👋
+                </h1>
+                <h2>
+                    Desenvolvedor Python e Entusiasta de IA
+                </h2>
+                <p>
+                    Estudante de Desenvolvimento de Sistemas,
+                    criando projetos com Python, Flask e
+                    Inteligência Artificial para transformar
+                    ideias em aplicações reais.
+                </p>
+            </div>
+
+            <div class="hero-imagem-direita">
+                <img src="img/no-image.jpg" alt="no image">
+            </div>
+
+        </section>
+        <section Tecnologias>
+            <h2>Tecnologias</h2>
+            <div class="card-tech">
+                <h3>Back-End</h3>
+                <ul>
+                    <li> <img src="img/Python-logo.png" alt="" id="icon">Python</li>
+                    <li>Flask</li>
+                </ul>
+            </div>
+            <div class="card-tech">
+                <h3>Front-End</h3>
+                <ul>
+                    <li> <img src="img/html5.png" alt="" id="icon">HTMl5</li>
+                    <li> <img src="img/css-icon.png" alt="" id="icon">CSS3</li>
+                    <li> <img src="img/JavaScript-logo.png" alt="" id="icon"> JavaScript</li>
+                    <li> <img src="img/React-icon.png" alt="" id="icon">React</li>
+                </ul>
+            </div>
+            <div class="card-tech">
+                </h3>Ferramentas<h3>
+                    <ul>
+                        <li>Git</li>
+                        <li.> <img src="img/github-icon.png" alt="" id="icon">GitHub</li>
+                    </ul>
+            </div>
+            <div class="card-tech">
+                <h3>IAs</h3>
+                <ul>
+                    <li>
+                        Ollama
+                    </li>
+                    <li>
+                        OpenAI
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <!-- Rodapé -->
