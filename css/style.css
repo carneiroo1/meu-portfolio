@@ -83,8 +83,21 @@ h1, h2 {
 .card-tech {
     li {
         display: flex;
-        align-items: column;
+        flex-direction: column;
     }
+    ul {
+        gap: 20px;
+    }
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: 200px;
+    width: 350px;
+}
+
+.tech-duo {
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {
