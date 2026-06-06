@@ -10,8 +10,10 @@ body {
 }
 
 main {
-    height: 120vh;
+    height: 130vh;
     margin-bottom: 1px;
+    width: 80vw;
+    margin: auto;
 }
 
 footer {
@@ -27,11 +29,7 @@ header {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-bottom: solid 3px rgba(0, 0, 0, 0.1);
-    ul {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-    }
+
 
     a {
         text-decoration: none;
@@ -53,8 +51,6 @@ h1 {
 
 .hero {
     padding-top: 100px;
-    width: 80vw;
-    margin: auto;
     display: flex;
     
 }
@@ -82,4 +78,12 @@ h1, h2 {
 #h1-nome-destaque {
     font-size: 90px;
     color: blue;
+}
+
+.card-tech {}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
 }
