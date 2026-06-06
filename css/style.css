@@ -219,7 +219,7 @@ main {
     max-width: 500px;
     margin-bottom: 24px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
     border-radius: var(--raio-card);
     padding: 24px 16px;
 }
@@ -310,6 +310,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    transition: transform(0.3s) ease;
+}
+
+.card-projetos:hover {
+    transform: scale(1.05);
 }
 
 .card-projetos h2 {
@@ -329,6 +334,8 @@ main {
     gap: 8px;
     justify-content: center;
     padding: 0;
+    display: flex;
+    list-style-type: none;
 }
 
 .card-projetos span {
@@ -488,6 +495,16 @@ html {
         width: 92vw;
     }
 
+    p {
+        text-align: justify;
+    }
+
+    .tecnologias, .projetos {
+        h1 {
+            text-align: center;
+        }
+    }
+
     .hero-imagem-direita img,
     .aboutme-esquerda img {
         width: 160px;
@@ -502,6 +519,16 @@ html {
     .icon-header {
         width: 24px;
         height: 24px;
+    }
+
+    header {
+        a {
+            font-size: 10px;
+        }
+
+        ul {
+            margin-right: 2px;
+        }
     }
 }
 
