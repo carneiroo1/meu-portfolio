@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    height: 130vh;
+    height: 100%;
     margin-bottom: 1px;
     width: 80vw;
     margin: auto;
@@ -52,7 +52,7 @@ h1 {
 .hero {
     padding-top: 100px;
     display: flex;
-    
+    border-bottom: 3px solid;
 }
 
 body, a, p {
@@ -90,18 +90,33 @@ h1, h2 {
     }
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
+    box-shadow: 0px 0px 100px lightgray;
     height: 200px;
     width: 350px;
+    margin: 0px 80px 50px 0px;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 20px;
 }
+
+.card-tech:hover {
+    transform: scale(1.1);
+}
+
 
 .tech-duo {
     display: flex;
-    justify-content: space-between;
 }
 
 ul {
     list-style-type: none;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.mgtp15 {
+    margin-top: 15px;
+    font-size: 50px;
 }
