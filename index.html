@@ -28,16 +28,16 @@
         <nav>
             <ul class="header-list">
                 <li>
-                    <a href="index.html" rel="prev">Home</a>
+                    <a href="#hero" rel="prev">Home</a>
                 </li>
                 <li>
-                    <a href="projetos.html" rel="next">Projetos</a>
+                    <a href="#aboutme" rel="next">Sobre Mim</a>
                 </li>
                 <li>
-                    <a href="#" rel="next">Sobre Mim</a>
+                    <a href="#projetos" rel="next">Projetos</a>
                 </li>
                 <li>
-                    <a href="#" rel="next">Contato</a>
+                    <a href="#contato" rel="next">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -63,7 +63,7 @@
 
     <!-- Principal -->
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-texto-esquerda">
                 <h1>
                     Olá, eu sou
@@ -90,7 +90,7 @@
                 <img src="img/no-image.jpg" alt="no image">
             </div>
         </section>
-        <section class="Tecnologias">
+        <section class="tecnologias" id="tecnologias">
             <h1 class="mgtp15">Tecnologias</h1>
             <div class="tech-duo">
                 <div class="card-tech">
@@ -134,28 +134,52 @@
             </div>
         </section>
 
-        <section class="aboutme">
-            <h1 class="mgtp15">
-                Sobre Mim
-            </h1>
-            <p>
-                Olá! Meu nome é Artur Carneiro e sou estudante de
-                Desenvolvimento de Sistemas.
+        <section class="aboutme" id="aboutme">
+            <div class="aboutme-esquerda">
+                <img src="img/no-image.jpg" alt="">
+            </div>
+            <div class="aboutme-direita">
+                <h1 class="mgtp15">
+                    Sobre Mim
+                </h1>
+                <p>
+                    Olá! Meu nome é Artur Carneiro e sou estudante de
+                    Desenvolvimento de Sistemas.
+                    Minha paixão por tecnologia começou ainda na infância,
+                    quando tive meu primeiro contato com programação através
+                    do Scratch. Desde então venho estudando e desenvolvendo
+                    projetos próprios para aprimorar minhas habilidades.
+                    Atualmente tenho foco em Python, desenvolvimento web e
+                    Inteligência Artificial, buscando aprender através da
+                    criação de aplicações reais.
+                </p>
+            </div>
+        </section>
 
-                Minha paixão por tecnologia começou ainda na infância,
-                quando tive meu primeiro contato com programação através
-                do Scratch. Desde então venho estudando e desenvolvendo
-                projetos próprios para aprimorar minhas habilidades.
+        <section class="projetos" id="projetos">
+            <h1 class="mgtp15">Projeto em destaque</h1>
+            <div class="cards">
+                <div class="card-projetos">
+                    <h2>🤖 Resumidor de Vídeos com IA</h2>
+                    <p>
+                        Aplicação web que resume vídeos do
+                        YouTube utilizando Inteligência Artificial.
+                    </p>
+                    <ul>
+                        <li><span>Python</span></li>
+                        <li><span>Flask</span></li>
+                        <li><span>Ollama</span></li>
+                    </ul>
+                    
+                    <a href="https://github.com/carneiroo1/Projetos-Python/tree/main/Resumo-de-videos">Código (GitHub)</a>
+                </div>
+            </div>
 
-                Atualmente tenho foco em Python, desenvolvimento web e
-                Inteligência Artificial, buscando aprender através da
-                criação de aplicações reais.
-            </p>
         </section>
     </main>
 
     <!-- Rodapé -->
-    <footer>
+    <footer id="contato">
         <span>Artur Carneiro Tavares</span>
     </footer>
 </body>
