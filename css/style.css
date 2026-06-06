@@ -374,6 +374,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    color: var(--cor-texto);
 }
  
 footer h3 {
@@ -385,7 +386,7 @@ footer h3 {
 footer > p {
     margin: 0;
     font-size: 0.95rem;
-    color: #888;
+    color: var(--cor-texto);
 }
  
 .social {
@@ -437,7 +438,7 @@ footer > a:hover {
     color: #aaa;
     margin: 0;
 }
- 
+
 
 /* =============================================
    SCROLL SUAVE
