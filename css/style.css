@@ -80,7 +80,12 @@ h1, h2 {
     color: blue;
 }
 
-.card-tech {}
+.card-tech {
+    li {
+        display: flex;
+        align-items: column;
+    }
+}
 
 ul {
     list-style-type: none;
