@@ -355,13 +355,81 @@ main {
 /* =============================================
    FOOTER
    ============================================= */
+/* =============================================
+   FOOTER
+   ============================================= */
 footer {
     border-top: solid 1px var(--cor-borda);
-    padding: 32px 20px;
+    padding: 64px 20px 40px;
     text-align: center;
-    font-size: 0.9rem;
-    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
+ 
+footer h3 {
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    margin: 0;
+    color: var(--cor-texto);
+}
+ 
+footer > p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #888;
+}
+ 
+.social {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 8px 0;
+}
+ 
+.social a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    padding: 8px 20px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 50px;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 0.4px;
+}
+ 
+.social a:hover {
+    background: var(--cor-primaria);
+    color: white;
+}
+ 
+[data-theme=dark] .social a:hover {
+    color: #0f1117;
+}
+ 
+footer > a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: #aaa;
+    border: 1px solid var(--cor-borda);
+    padding: 6px 16px;
+    border-radius: 50px;
+    transition: color 0.2s, border-color 0.2s;
+}
+ 
+footer > a:hover {
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+ 
+.copyright {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin: 0;
+}
+ 
 
 /* =============================================
    SCROLL SUAVE
