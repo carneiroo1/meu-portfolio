@@ -253,12 +253,8 @@ main {
 
 .icon-tech {
     width: clamp(48px, 6vw, 72px);
-    height: auto;
+    height: clamp(48px, 6vw, 72px);
     object-fit: contain;
-}
-
-#css-logo {
-    height: 48px;
 }
 
 /* =============================================
