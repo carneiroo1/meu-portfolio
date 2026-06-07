@@ -2,7 +2,7 @@
 
 Portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro. Apresenta minha trajetória como desenvolvedor, tecnologias que utilizo e projetos que construí.
 
-🔗 **[Ver portfólio online](#)** <!-- substitua pelo link do seu deploy -->
+🔗 **[Ver portfólio online](https://artur-carneiro-portfolio.vercel.app)** <!-- substitua pelo link do seu deploy -->
 
 ---
 
