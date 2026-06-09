@@ -359,6 +359,12 @@ main {
     background-color: var(--cor-primaria);
 }
 
+.projetos-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
 /* =============================================
    FOOTER
    ============================================= */
